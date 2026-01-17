@@ -30,4 +30,4 @@ while True:
 You should use every output pin exclusively from one side (Sketch vs Python). Never use single output pin in both scripts. Input pins you can safely read from both sketch and script. Also, if you use other peripheral on pins (for example, I2C sensor using Wire library), do not use these pins on Python side.
 
 ## Internals
-I briefly described internals of this library and how it works in [blog at Element14 community]().
+I briefly described internals of this library and how it works in [blog at Element14 community](https://community.element14.com/products/arduino/b/blog/posts/arduino-uno-q-drive-mcu-pins-directly-from-mpu).
