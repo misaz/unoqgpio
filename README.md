@@ -25,6 +25,10 @@ while True:
 	digitalWrite(LED4_G, HIGH)
 ```
 
+## Using in Arduino App Lab
+
+Currently it do not work in Arduino App Lab, because App Lab runs python programs in docker and containerized programs do not have access to /dev/gpiochip1 which is used under the hood. You can run it directly in terminal instead. If Arduino adds support for passing /dev/gpiochip devices to containers, it will become possible to use it inside App Lab. It will still require some *hacks* though. 
+
 ## Notes
 
 You should use every output pin exclusively from one side (Sketch vs Python). Never use single output pin in both scripts. Input pins you can safely read from both sketch and script. Also, if you use other peripheral on pins (for example, I2C sensor using Wire library), do not use these pins on Python side.
