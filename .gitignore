@@ -1,0 +1,4 @@
+build/
+dist/
+unoqgpio.egg-info/
+/.vs
